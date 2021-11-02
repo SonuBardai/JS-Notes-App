@@ -45,8 +45,8 @@ function showNotes() {
             html = html + `
         <div class="noteCards card mx-2 my-3" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title" id="title-${i}">${titles[i]}</h5>
-            <p class="card-text" id="note-${i}">${notes[i]}</p>
+            <pre><h5 class="card-title" id="title-${i}">${titles[i]}</h5></pre>
+            <pre><p class="card-text" id="note-${i}">${notes[i]}</p></pre>
             <button type="button" id="editbtn-${i}" onclick="editNote(${i})" class="btn btn-primary">Edit Note</button>
             <button type="button" onclick="delNote(${i})" class="btn btn-danger">Delete Note</button>
         </div>
